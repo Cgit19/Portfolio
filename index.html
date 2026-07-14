@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chalchisa Shiferaw | Video Editor & Software Engineer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Linked stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== HEADER ========== -->
+    <header>
+      <nav>
+        <div class="logo">
+          C<span>S</span>
+          <small>Video Editor · Software Engineer</small>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#showreel">Showreel</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#resume" class="resume-btn"
+              ><i class="fas fa-file-pdf"></i> Resume</a
+            >
+          </li>
+        </ul>
+        <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero container">
+      <div class="hero-badge">
+        <i class="fas fa-video" style="margin-right: 6px"></i> Video Editor ·
+        <i class="fas fa-code" style="margin-left: 6px; margin-right: 6px"></i>
+        Software Engineering Student
+      </div>
+      <h1>
+        Chalchisa <span class="highlight">Shiferaw</span><br />
+        <span class="highlight2">Hirpasa</span>
+      </h1>
+      <p class="hero-subtitle">
+        I turn raw footage into compelling stories — while learning to build the
+        tools that power them.
+      </p>
+      <p class="hero-tagline">
+        <i class="fas fa-cut"></i> Video Editing · Color Grading · Beat Sync ·
+        AI-Assisted Content
+      </p>
+      <div class="hero-buttons">
+        <a href="#showreel" class="btn btn-primary"
+          ><i class="fas fa-play"></i> Watch My Work</a
+        >
+        <a href="#resume" class="btn btn-outline"
+          ><i class="fas fa-file-alt"></i> View Resume</a
+        >
+      </div>
+    </section>
+
+    <!-- ========== SHOWREEL ========== -->
+    <section class="showreel container" id="showreel">
+      <h2 class="section-title">Featured <span>Videos</span></h2>
+      <div class="video-grid">
+        <!-- Video Card 1 -->
+        <div class="video-card">
+          <div
+            class="video-thumbnail"
+            onclick="
+              playVideo(this, 'https://www.youtube.com/embed/dQw4w9WgXcQ')
+            "
+          >
+            <div class="play-overlay">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <span class="thumb-label">TikTok</span>
+          </div>
+          <div class="video-info">
+            <h3>TikTok Editing Portfolio</h3>
+            <p>
+              A collection of short-form edits showcasing different styles,
+              transitions, and effects.
+            </p>
+            <div class="video-tags">
+              <span>Short-form</span>
+              <span>Transitions</span>
+              <span>Beat Sync</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Card 2 -->
+        <div class="video-card">
+          <div
+            class="video-thumbnail"
+            onclick="
+              playVideo(this, 'https://www.youtube.com/embed/dQw4w9WgXcQ')
+            "
+          >
+            <div class="play-overlay">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <span class="thumb-label">Cinematic</span>
+          </div>
+          <div class="video-info">
+            <h3>Cinematic Short Edits</h3>
+            <p>
+              Storytelling edits focused on mood, color grading, and emotional
+              impact.
+            </p>
+            <div class="video-tags">
+              <span>Color Grading</span>
+              <span>Cinematic</span>
+              <span>Storytelling</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Card 3 -->
+        <div class="video-card">
+          <div
+            class="video-thumbnail"
+            onclick="
+              playVideo(this, 'https://www.youtube.com/embed/dQw4w9WgXcQ')
+            "
+          >
+            <div class="play-overlay">
+              <i class="fas fa-play-circle"></i>
+            </div>
+            <span class="thumb-label">Transform</span>
+          </div>
+          <div class="video-info">
+            <h3>Before &amp; After Transformations</h3>
+            <p>
+              Editing transformations that highlight the power of visual
+              storytelling and post-production.
+            </p>
+            <div class="video-tags">
+              <span>Before/After</span>
+              <span>Visual Effects</span>
+              <span>Post-Production</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="fas fa-video"></i> Video Editing
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-palette"></i> Color Grading
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-arrows-alt-h"></i> Transitions &amp; Effects
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-music"></i> Beat Sync Editing
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-book-open"></i> Storytelling
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-robot"></i> AI-Assisted Content
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-headphones"></i> Audio Editing &amp; Sound Design
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-code"></i> Software Engineering (learning)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TOOLS ========== -->
+    <section class="tools">
+      <div class="container">
+        <h2 class="section-title">Tools &amp; <span>Technologies</span></h2>
+        <div class="tools-grid">
+          <span>Adobe Premiere Pro</span>
+          <span>DaVinci Resolve</span>
+          <span>Google Veo</span>
+          <span>Gemini AI</span>
+          <span>Pexels</span>
+          <span>Freesound.org</span>
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="projects container" id="projects">
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <span class="project-icon">🎬</span>
+          <h3>TikTok Editing Portfolio</h3>
+          <p>
+            A collection of short-form edits showcasing different styles,
+            transitions, and effects — optimized for social media engagement.
+          </p>
+          <div class="project-tags">
+            <span>Short-form</span>
+            <span>Transitions</span>
+            <span>Beat Sync</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <span class="project-icon">🎥</span>
+          <h3>Cinematic Short Edits</h3>
+          <p>
+            Storytelling edits focused on mood, color grading, and emotional
+            impact — crafted for visual depth and narrative flow.
+          </p>
+          <div class="project-tags">
+            <span>Color Grading</span>
+            <span>Cinematic</span>
+            <span>Storytelling</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <span class="project-icon">✨</span>
+          <h3>Before &amp; After Transformations</h3>
+          <p>
+            Editing transformations that highlight the power of visual
+            storytelling and post-production techniques.
+          </p>
+          <div class="project-tags">
+            <span>Before/After</span>
+            <span>Visual Effects</span>
+            <span>Post-Production</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-content">
+          <p>
+            I'm <strong>Chalchisa Shiferaw Hirpasa</strong> — a creative video
+            editor specializing in short-form and cinematic content. I transform
+            raw footage into visually compelling stories that engage audiences
+            and bring ideas to life.
+          </p>
+          <p>
+            I combine creativity, technical skills, and AI-powered tools like
+            <strong>Google Veo</strong> and <strong>Gemini</strong>
+            to deliver high-quality edits. I source stock footage from Pexels
+            and sounds from Freesound.org to elevate production value.
+          </p>
+          <p>
+            Currently pursuing a
+            <strong>Bachelor of Science in Software Engineering</strong> at
+            Jimma University — passionate about technology, problem solving, and
+            building innovative solutions.
+          </p>
+          <span class="about-badge">
+            <i class="fas fa-check-circle"></i> Always learning, always
+            improving
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EDUCATION ========== -->
+    <section class="education">
+      <div class="container">
+        <h2 class="section-title">My <span>Education</span></h2>
+        <div class="edu-card">
+          <h3>Jimma University</h3>
+          <p class="edu-major">Bachelor of Science in Software Engineering</p>
+          <p>
+            <i class="fas fa-calendar-alt" style="color: #6c47ff"></i> 2024 –
+            Present
+          </p>
+          <p style="color: #a0a0b0; font-size: 0.95rem; margin-top: 0.8rem">
+            Passionate about technology, problem solving, and building
+            innovative solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RESUME (pre-hosted, viewable directly — no upload needed) ========== -->
+    <section class="resume-section container" id="resume">
+      <h2 class="section-title">My <span>Resume</span></h2>
+      <div class="resume-actions">
+        <a
+          href="resume.pdf"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-primary"
+        >
+          <i class="fas fa-eye"></i> View Full Screen
+        </a>
+        <a href="resume.pdf" download class="btn btn-outline">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+      <div class="resume-preview">
+        <iframe src="resume.pdf" title="Chalchisa Shiferaw Hirpasa Resume">
+          <div class="resume-preview-fallback">
+            Your browser can't preview PDFs inline.
+            <a href="resume.pdf" target="_blank" rel="noopener"
+              >Click here to view the resume</a
+            >.
+          </div>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact container" id="contact">
+      <h2 class="section-title">Get in <span>Touch</span></h2>
+      <div class="contact-links">
+        <a href="mailto:shferawchalu@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i> shferawchalu@gmail.com
+        </a>
+        <a href="tel:+251944452994" aria-label="Phone">
+          <i class="fas fa-phone"></i> +251 944 452 994
+        </a>
+        <a href="#" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i> @cma_visuals
+        </a>
+        <a href="#" aria-label="Instagram">
+          <i class="fab fa-instagram"></i> @cma_visuals
+        </a>
+        <a href="#" aria-label="YouTube">
+          <i class="fab fa-youtube"></i> YouTube
+        </a>
+        <a href="#" aria-label="GitHub">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+      <p
+        style="
+          text-align: center;
+          color: #606070;
+          margin-top: 2rem;
+          font-size: 0.9rem;
+        "
+      >
+        <i class="fas fa-map-marker-alt" style="color: #6c47ff"></i>Addis Ababa
+        and Jimma, Ethiopia
+      </p>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Chalchisa Shiferaw Hirpasa.</p>
+        <div class="footer-social">
+          <a href="mailto:shferawchalu@gmail.com" aria-label="Email"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Linked script -->
+    <script src="script.js"></script>
+  </body>
+</html>
